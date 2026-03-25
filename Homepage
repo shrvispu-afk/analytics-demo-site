@@ -4,24 +4,25 @@ index.html
 <head>
   <title>Analytics Demo</title>
 </head>
+
 <body>
 
   <h1>Welcome to My Analytics Demo Site</h1>
 
   <button onclick="submitForm()">Contact Us</button>
 
- <script>
-window.dataLayer = window.dataLayer || [];
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-function submitForm() {
-  alert("Form Submitted!");
+    function submitForm() {
+      alert("Form Submitted!");
 
-  dataLayer.push({
-    event: "form_submit",
-    form_name: "contact_form"
-  });
-}
-</script>
+      dataLayer.push({
+        event: "form_submit",
+        form_name: "contact_form"
+      });
+    }
+  </script>
 
 </body>
 </html>
